@@ -13,4 +13,6 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Classes/**/*.h'
   s.source_files = 'Classes/**/*.h'
 
+  s.license = 'MIT'
+
 end
