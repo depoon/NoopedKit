@@ -7,11 +7,11 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/depoon/NoopedKit.git', :tag => "0.1", :submodules => false }
   s.requires_arc = true
 
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.8'
 
-  s.public_header_files = 'Classes/**/*.h'
-  s.source_files = 'Classes/**/*.h'
+  s.public_header_files = 'Classes/**/*.*'
+  s.source_files = 'Classes/**/*.*'
 
   s.license = 'MIT'
 
