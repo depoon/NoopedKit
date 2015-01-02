@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		1C1B481B1A48746400D268A6 /* NKMapZoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NKMapZoom.h; path = Class/Map/NKMapZoom.h; sourceTree = "<group>"; };
-		1C1B481C1A48746400D268A6 /* NKMapZoom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NKMapZoom.m; path = Class/Map/NKMapZoom.m; sourceTree = "<group>"; };
+		1C1B481B1A48746400D268A6 /* NKMapZoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NKMapZoom.h; path = Classes/Map/NKMapZoom.h; sourceTree = "<group>"; };
+		1C1B481C1A48746400D268A6 /* NKMapZoom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NKMapZoom.m; path = Classes/Map/NKMapZoom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
