@@ -2,8 +2,8 @@ Pod::Spec.new do |s|
   s.name     = 'NoopedKit'
   s.version  = '0.1'
   s.summary  = 'Noop tool kit'
-  s.homepage = 'https://github.com/AFNetworking/AFNetworking'
-  s.authors  = { 'Mattt Thompson' => 'm@mattt.me' }
+  s.homepage = 'https://github.com/depoon/NoopedKit'
+  s.author  = { 'Kenneth Poon' => 'de_poon@hotmail.com' }
   s.source   = { :git => 'https://github.com/depoon/NoopedKit.git', :tag => "0.1", :submodules => false }
   s.requires_arc = true
 
@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.8'
 
   s.public_header_files = 'ClassesAFNetworking/*.h'
-  s.source_files = 'AFNetworking/AFNetworking.h'
+  #s.source_files = 'AFNetworking/AFNetworking.h'
 
 end
