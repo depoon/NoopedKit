@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.8'
 
-  s.public_header_files = 'ClassesAFNetworking/*.h'
-  #s.source_files = 'AFNetworking/AFNetworking.h'
+  s.public_header_files = 'Classes/**/*.h'
+  s.source_files = 'Classes/**/*.h'
 
 end
