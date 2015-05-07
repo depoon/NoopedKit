@@ -11,6 +11,6 @@
 
 @interface NKAnimtationUtility : NSObject
 
--(void) animateFadeView: (UIView*) fadeView initialAlpha: (float) initialAlpha targetAlpha: (float) targetAlpha delegate: (id) delegate  selector: (SEL) selector;
--(void) animateFadeView: (UIView*) fadeView initialAlpha: (float) initialAlpha targetAlpha: (float) targetAlpha;
+-(void) animateFadeView: (UIView*) fadeView initialAlpha: (float) initialAlpha targetAlpha: (float) targetAlpha duration: (float) duration delegate: (id) delegate  selector: (SEL) selector;
+-(void) animateFadeView: (UIView*) fadeView initialAlpha: (float) initialAlpha targetAlpha: (float) targetAlpha duration: (float) duration;
 @end

@@ -11,10 +11,10 @@
 @implementation NKAnimtationUtility
 
 
--(void) animateFadeView: (UIView*) fadeView initialAlpha: (float) initialAlpha targetAlpha: (float) targetAlpha delegate: (id) delegate  selector: (SEL) selector{
+-(void) animateFadeView: (UIView*) fadeView initialAlpha: (float) initialAlpha targetAlpha: (float) targetAlpha duration: (float) duration delegate: (id) delegate  selector: (SEL) selector{
     fadeView.alpha = initialAlpha;
     [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.5];
+    [UIView setAnimationDuration: duration];
     fadeView.alpha = targetAlpha;
     if (delegate!=nil && selector!=nil){
         [UIView setAnimationDelegate:delegate];
@@ -23,8 +23,9 @@
     [UIView commitAnimations];
 }
 
--(void) animateFadeView: (UIView*) fadeView initialAlpha: (float) initialAlpha targetAlpha: (float) targetAlpha{
-    [self animateFadeView:fadeView initialAlpha:initialAlpha targetAlpha:targetAlpha delegate:nil selector:nil];
+
+-(void) animateFadeView: (UIView*) fadeView initialAlpha: (float) initialAlpha targetAlpha: (float) targetAlpha duration: (float) duration{
+    [self animateFadeView:fadeView initialAlpha:initialAlpha targetAlpha:targetAlpha duration: duration delegate:nil selector:nil];
 }
 
 @end
