@@ -6,16 +6,64 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1C7D80291AFBD24200E44E92 /* NoopedKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C7D80281AFBD24100E44E92 /* NoopedKit.h */; };
+		1C7D802B1AFBD24200E44E92 /* NoopedKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D802A1AFBD24200E44E92 /* NoopedKit.m */; };
+		1C7D803A1AFBD24900E44E92 /* NKAnimtationUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D80201AFBD1FF00E44E92 /* NKAnimtationUtility.m */; };
+		1C7D803B1AFBD24900E44E92 /* NKMapZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B481C1A48746400D268A6 /* NKMapZoom.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1C7D80231AFBD24100E44E92 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				1C7D80291AFBD24200E44E92 /* NoopedKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1C1B481B1A48746400D268A6 /* NKMapZoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NKMapZoom.h; path = Classes/Map/NKMapZoom.h; sourceTree = "<group>"; };
 		1C1B481C1A48746400D268A6 /* NKMapZoom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NKMapZoom.m; path = Classes/Map/NKMapZoom.m; sourceTree = "<group>"; };
+		1C7D801F1AFBD1FF00E44E92 /* NKAnimtationUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NKAnimtationUtility.h; path = Animation/NKAnimtationUtility.h; sourceTree = "<group>"; };
+		1C7D80201AFBD1FF00E44E92 /* NKAnimtationUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NKAnimtationUtility.m; path = Animation/NKAnimtationUtility.m; sourceTree = "<group>"; };
+		1C7D80251AFBD24100E44E92 /* libNoopedKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNoopedKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7D80281AFBD24100E44E92 /* NoopedKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoopedKit.h; sourceTree = "<group>"; };
+		1C7D802A1AFBD24200E44E92 /* NoopedKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoopedKit.m; sourceTree = "<group>"; };
+		1C7D80301AFBD24200E44E92 /* NoopedKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoopedKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7D80331AFBD24200E44E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C7D80221AFBD24100E44E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7D802D1AFBD24200E44E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1C1B48131A48740C00D268A6 = {
 			isa = PBXGroup;
 			children = (
+				1C7D80051AFBD18000E44E92 /* AnimationUtility */,
 				1C1B481A1A48741E00D268A6 /* Map */,
+				1C7D80271AFBD24100E44E92 /* NoopedKit */,
+				1C7D80311AFBD24200E44E92 /* NoopedKitTests */,
+				1C7D80261AFBD24100E44E92 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -28,13 +76,101 @@
 			name = Map;
 			sourceTree = "<group>";
 		};
+		1C7D80051AFBD18000E44E92 /* AnimationUtility */ = {
+			isa = PBXGroup;
+			children = (
+				1C7D801F1AFBD1FF00E44E92 /* NKAnimtationUtility.h */,
+				1C7D80201AFBD1FF00E44E92 /* NKAnimtationUtility.m */,
+			);
+			name = AnimationUtility;
+			sourceTree = "<group>";
+		};
+		1C7D80261AFBD24100E44E92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C7D80251AFBD24100E44E92 /* libNoopedKit.a */,
+				1C7D80301AFBD24200E44E92 /* NoopedKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C7D80271AFBD24100E44E92 /* NoopedKit */ = {
+			isa = PBXGroup;
+			children = (
+				1C7D80281AFBD24100E44E92 /* NoopedKit.h */,
+				1C7D802A1AFBD24200E44E92 /* NoopedKit.m */,
+			);
+			path = NoopedKit;
+			sourceTree = "<group>";
+		};
+		1C7D80311AFBD24200E44E92 /* NoopedKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C7D80321AFBD24200E44E92 /* Supporting Files */,
+			);
+			path = NoopedKitTests;
+			sourceTree = "<group>";
+		};
+		1C7D80321AFBD24200E44E92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C7D80331AFBD24200E44E92 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C7D80241AFBD24100E44E92 /* NoopedKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C7D80341AFBD24200E44E92 /* Build configuration list for PBXNativeTarget "NoopedKit" */;
+			buildPhases = (
+				1C7D80211AFBD24100E44E92 /* Sources */,
+				1C7D80221AFBD24100E44E92 /* Frameworks */,
+				1C7D80231AFBD24100E44E92 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoopedKit;
+			productName = NoopedKit;
+			productReference = 1C7D80251AFBD24100E44E92 /* libNoopedKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1C7D802F1AFBD24200E44E92 /* NoopedKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C7D80371AFBD24200E44E92 /* Build configuration list for PBXNativeTarget "NoopedKitTests" */;
+			buildPhases = (
+				1C7D802C1AFBD24200E44E92 /* Sources */,
+				1C7D802D1AFBD24200E44E92 /* Frameworks */,
+				1C7D802E1AFBD24200E44E92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoopedKitTests;
+			productName = NoopedKitTests;
+			productReference = 1C7D80301AFBD24200E44E92 /* NoopedKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1C1B48141A48740C00D268A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					1C7D80241AFBD24100E44E92 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					1C7D802F1AFBD24200E44E92 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
 			};
 			buildConfigurationList = 1C1B48171A48740C00D268A6 /* Build configuration list for PBXProject "NoopedKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -44,12 +180,45 @@
 				en,
 			);
 			mainGroup = 1C1B48131A48740C00D268A6;
+			productRefGroup = 1C7D80261AFBD24100E44E92 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				1C7D80241AFBD24100E44E92 /* NoopedKit */,
+				1C7D802F1AFBD24200E44E92 /* NoopedKitTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C7D802E1AFBD24200E44E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C7D80211AFBD24100E44E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7D802B1AFBD24200E44E92 /* NoopedKit.m in Sources */,
+				1C7D803B1AFBD24900E44E92 /* NKMapZoom.m in Sources */,
+				1C7D803A1AFBD24900E44E92 /* NKAnimtationUtility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7D802C1AFBD24200E44E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		1C1B48181A48740C00D268A6 /* Debug */ = {
@@ -64,6 +233,174 @@
 			};
 			name = Release;
 		};
+		1C7D80351AFBD24200E44E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1C7D80361AFBD24200E44E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C7D80381AFBD24200E44E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = NoopedKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1C7D80391AFBD24200E44E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = NoopedKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -75,6 +412,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1C7D80341AFBD24200E44E92 /* Build configuration list for PBXNativeTarget "NoopedKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7D80351AFBD24200E44E92 /* Debug */,
+				1C7D80361AFBD24200E44E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1C7D80371AFBD24200E44E92 /* Build configuration list for PBXNativeTarget "NoopedKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7D80381AFBD24200E44E92 /* Debug */,
+				1C7D80391AFBD24200E44E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
