@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C41A50B1AFBD67A001E4275 /* NKAnimtationUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C41A5071AFBD67A001E4275 /* NKAnimtationUtility.m */; };
+		1C41A50C1AFBD67A001E4275 /* NKMapZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C41A50A1AFBD67A001E4275 /* NKMapZoom.m */; };
 		1C7D80291AFBD24200E44E92 /* NoopedKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C7D80281AFBD24100E44E92 /* NoopedKit.h */; };
 		1C7D802B1AFBD24200E44E92 /* NoopedKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D802A1AFBD24200E44E92 /* NoopedKit.m */; };
-		1C7D803A1AFBD24900E44E92 /* NKAnimtationUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D80201AFBD1FF00E44E92 /* NKAnimtationUtility.m */; };
-		1C7D803B1AFBD24900E44E92 /* NKMapZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B481C1A48746400D268A6 /* NKMapZoom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1C1B481B1A48746400D268A6 /* NKMapZoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NKMapZoom.h; path = Classes/Map/NKMapZoom.h; sourceTree = "<group>"; };
-		1C1B481C1A48746400D268A6 /* NKMapZoom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NKMapZoom.m; path = Classes/Map/NKMapZoom.m; sourceTree = "<group>"; };
-		1C7D801F1AFBD1FF00E44E92 /* NKAnimtationUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NKAnimtationUtility.h; path = Animation/NKAnimtationUtility.h; sourceTree = "<group>"; };
-		1C7D80201AFBD1FF00E44E92 /* NKAnimtationUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NKAnimtationUtility.m; path = Animation/NKAnimtationUtility.m; sourceTree = "<group>"; };
+		1C41A5061AFBD67A001E4275 /* NKAnimtationUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKAnimtationUtility.h; sourceTree = "<group>"; };
+		1C41A5071AFBD67A001E4275 /* NKAnimtationUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKAnimtationUtility.m; sourceTree = "<group>"; };
+		1C41A5091AFBD67A001E4275 /* NKMapZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKMapZoom.h; sourceTree = "<group>"; };
+		1C41A50A1AFBD67A001E4275 /* NKMapZoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKMapZoom.m; sourceTree = "<group>"; };
 		1C7D80251AFBD24100E44E92 /* libNoopedKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNoopedKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C7D80281AFBD24100E44E92 /* NoopedKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoopedKit.h; sourceTree = "<group>"; };
 		1C7D802A1AFBD24200E44E92 /* NoopedKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoopedKit.m; sourceTree = "<group>"; };
@@ -59,30 +59,38 @@
 		1C1B48131A48740C00D268A6 = {
 			isa = PBXGroup;
 			children = (
-				1C7D80051AFBD18000E44E92 /* AnimationUtility */,
-				1C1B481A1A48741E00D268A6 /* Map */,
+				1C41A5041AFBD67A001E4275 /* Classes */,
 				1C7D80271AFBD24100E44E92 /* NoopedKit */,
 				1C7D80311AFBD24200E44E92 /* NoopedKitTests */,
 				1C7D80261AFBD24100E44E92 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1C1B481A1A48741E00D268A6 /* Map */ = {
+		1C41A5041AFBD67A001E4275 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1C1B481B1A48746400D268A6 /* NKMapZoom.h */,
-				1C1B481C1A48746400D268A6 /* NKMapZoom.m */,
+				1C41A5051AFBD67A001E4275 /* Animation */,
+				1C41A5081AFBD67A001E4275 /* Map */,
 			);
-			name = Map;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		1C7D80051AFBD18000E44E92 /* AnimationUtility */ = {
+		1C41A5051AFBD67A001E4275 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				1C7D801F1AFBD1FF00E44E92 /* NKAnimtationUtility.h */,
-				1C7D80201AFBD1FF00E44E92 /* NKAnimtationUtility.m */,
+				1C41A5061AFBD67A001E4275 /* NKAnimtationUtility.h */,
+				1C41A5071AFBD67A001E4275 /* NKAnimtationUtility.m */,
 			);
-			name = AnimationUtility;
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		1C41A5081AFBD67A001E4275 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1C41A5091AFBD67A001E4275 /* NKMapZoom.h */,
+				1C41A50A1AFBD67A001E4275 /* NKMapZoom.m */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		1C7D80261AFBD24100E44E92 /* Products */ = {
@@ -206,8 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C7D802B1AFBD24200E44E92 /* NoopedKit.m in Sources */,
-				1C7D803B1AFBD24900E44E92 /* NKMapZoom.m in Sources */,
-				1C7D803A1AFBD24900E44E92 /* NKAnimtationUtility.m in Sources */,
+				1C41A50C1AFBD67A001E4275 /* NKMapZoom.m in Sources */,
+				1C41A50B1AFBD67A001E4275 /* NKAnimtationUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +428,7 @@
 				1C7D80361AFBD24200E44E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C7D80371AFBD24200E44E92 /* Build configuration list for PBXNativeTarget "NoopedKitTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +437,7 @@
 				1C7D80391AFBD24200E44E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
